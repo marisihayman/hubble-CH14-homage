@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hubble Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+
+    <link rel="shortcut icon" href="favicon-nasa.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@100;300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav - Search box -->
+    <header>
+      <div class="logo">
+        <img width="250px" src="logo.png" alt="Logo Nasa Hubble Telescope" />
+      </div>
+      <div class="search-hamburger">
+        <div class="search-bar">
+          <button type="button">
+            <i class="fa-solid fa-magnifying-glass"
+              ><p class="search-hero">Search</p></i
+            >
+          </button>
+        </div>
+        <div class="hamburger-icon">
+          <button onclick="toggle()">
+            <i class="fa-solid fa-bars" id="menu-btn"
+              ><p class="menu-hero">Menu</p></i
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+    <nav id="navbar" class="navbar">
+      <div class="menu-close">
+        <p>
+          MENU
+          <a href="index.html"
+            ><i id="index.html" class="fa-sharp fa-solid fa-xmark"></i
+          ></a>
+        </p>
+      </div>
+      <ul class="menu">
+        <li><a href="#"></a>Home</li>
+        <li class="science-drop">
+          <a href="#"></a
+          ><i class="fa-solid fa-plus" onclick="toggle()"></i>Science
+          <ul id="science-dropdown" class="dropwdown-menu">
+            <li><a href="#"></a>Key Concepts</li>
+            <li><a href="#"></a>Solar System</li>
+            <li><a href="#"></a>Exoplanets</li>
+            <li><a href="#"></a>Stars and Nebulas</li>
+            <li><a href="#"></a>Galaxies</li>
+            <li><a href="#"></a>Universe</li>
+            <li><a href="#"></a>Cosmic</li>
+          </ul>
+        </li>
+        <li><a href="#"></a><i class="fa-solid fa-plus"></i>News</li>
+        <li>
+          <a href="#"></a><i class="fa-solid fa-plus"></i>Mission and Telescope
+        </li>
+        <li><a href="#"></a><i class="fa-solid fa-plus"></i>Quick Facts</li>
+        <li>
+          <a href="#"></a><i class="fa-solid fa-plus"></i>Resource Gallery
+        </li>
+        <li><a href="#"></a><i class="fa-solid fa-plus"></i>Hubble</li>
+        <li><a href="#"></a><i class="fa-solid fa-plus"></i>About Us</li>
+        <li><a href="#"></a>Glossary</li>
+        <li><a href="#"></a>Contact Us</li>
+      </ul>
+    </nav>
+    <!-- Hero Section -->
+    <main class="hero">
+      <video
+        width="100%"
+        class="video-big"
+        autoplay
+        loop
+        muted
+        plays-inline
+        src="HeroVideo_Video 2_Final.mp4"
+      ></video>
+      <div class="hero-text">
+        <h1 class="hero-text-h1">HUBBLE SPACE TELESCOPE</h1>
+        <h2 class="hero-text-h2">Embark on a Journey of Discovery</h2>
+      </div>
+    </main>
+    <!-- Latest News -->
+    <div class="latest-news">
+      <h2 class="latest-news-h2">LATEST NEWS</h2>
+      <div class="gold-line"></div>
+      <h2 class="latest-news-h2-bold">MARCH 01, 2023</h2>
+      <p class="latest-news-p">
+        Hubble Captures Movie of DART Asteroid Impact Debris
+      </p>
+      <a href="https://hubblesite.org/contents/news-releases/2023/news-2023-006"
+        ><button class="latest-news-button">Read More</button></a
+      >
+    </div>
+    <!-- Circles - News - Images - Videos -->
+    <div class="circles-container">
+      <ul class="circles-list">
+        <li class="circle-news">
+          <div class="circle-news-container">
+            <h3 class="circle-news-title">
+              <a href="https://hubblesite.org/news/news-releases">News</a>
+            </h3>
+            <img
+              class="image-circles-news"
+              src="circles-images/circles-news.jpeg"
+              alt="Side view of Hubble space telescope"
+            />
+          </div>
+          <div class="golden-arrow"></div>
+        </li>
+
+        <li class="circle-images">
+          <div class="circle-news-container">
+            <h3 class="circle-images-title">
+              <a href="https://hubblesite.org/resource-gallery/images"
+                >Images</a
+              >
+            </h3>
+            <img
+              class="image-circles-news"
+              src="circles-images/circles-images.jpeg"
+              alt="Barred Spiral Galaxy NGC 1300"
+            />
+          </div>
+          <div class="golden-arrow"></div>
+        </li>
+
+        <li class="circle-videos">
+          <div class="circle-news-container">
+            <h3 class="circle-images-title">
+              <a href="https://hubblesite.org/resource-gallery/videos"
+                >Videos</a
+              >
+            </h3>
+            <img
+              class="image-circles-news"
+              src="circles-images/circles-videos.jpeg"
+              alt="NGC 602, N90"
+            />
+          </div>
+          <div class="golden-arrow"></div>
+        </li>
+      </ul>
+    </div>
+    <!-- Announcements  -->
+    <div class="announcements-primary-container">
+      <h2 class="announcements-title">Announcements</h2>
+      <div class="gold-line"></div>
+      <div class="announccements-secondary-container">
+        <h3 class="announcements-h3">
+          Monthly Tonight's Sky March Video Now Available
+        </h3>
+        <p class="announcements-p">
+          Learn more about the constellations you can observe in the night sky
+          during the month of March.
+          <a
+            href="https://hubblesite.org/resource-gallery/learning-resources/tonights-sky"
+            ><span>WATCH VIDEO > </span></a
+          >
+        </p>
+      </div>
+      <div class="announccements-secondary-container">
+        <h3 class="announcements-h3">Introducing Hubble's ULLYSES Program</h3>
+        <p class="announcements-p">
+          Hubble has embarked on an extensive three-year program to observe the
+          ultraviolet emissions of young stars.
+          <a
+            href="https://hubblesite.org/mission-and-telescope/hubbles-ullyses-program"
+            ><span>LEARN MORE > </span></a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- Hubble Favourites Section -->
+    <div class="hubble-favorites-title">
+      <h2 class="latest-news-h2">Hubble Favorites</h2>
+      <div class="gold-line"></div>
+      <h3 class="hubble-favorites-h3">VIEW ALL HUBBLE FAVORITES</h3>
+    </div>
+    <!-- Hubble slides Section -->
+    <section class="carousel">
+      <button
+        class="slider-button slider-button-prev"
+        data-slide-direction="prev"
+      >
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button
+        class="slider-button slider-button-next"
+        data-slide-direction="next"
+      >
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+      <ul class="slides">
+        <li class="slide" data-active-slide>
+          <img
+            src="favourites-slideshow/favourites-img-1.png"
+            alt="photos taken by hubble"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="favourites-slideshow/favourites-slideshow-img-2.jpeg"
+            alt="photos taken by hubble"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="favourites-slideshow/favourites-slideshow-img-3.jpeg"
+            alt="photos taken by hubble"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="favourites-slideshow/favourites-slideshow-img-4.jpeg"
+            alt="photos taken by hubble"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="favourites-slideshow/favourites-slideshow-img-5.jpeg"
+            alt="photos taken by hubble"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="favourites-slideshow/favourites-slideshow-img-6.jpeg"
+            alt="photos taken by hubble"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="favourites-slideshow/favourites-slideshow-img-7.jpeg"
+            alt="photos taken by hubble"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="favourites-slideshow/favourites-slideshow-img-7.jpeg"
+            alt="photos taken by hubble"
+          />
+        </li>
+      </ul>
+      <div class="slides-circles">
+        <div data-active-slide></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+    <!-- Resources section -->
+    <div class="hubble-resources-title">
+      <h2 class="resources-news-h2">Resources</h2>
+      <div class="gold-line"></div>
+    </div>
+    <div class="container1">
+      <div class="card-container">
+        <div class="card">
+          <div class="content">
+            <h2>Hubble Science</h2>
+            <p>Open new doors to the universe with Hubble's discoveries</p>
+          </div>
+          <div class="button-card">
+            <div class="button-r">
+              <button class="button-r-real">Explore the science</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-facts">
+          <div class="content">
+            <h2>Quick Facts</h2>
+
+            <p>
+              Get answers to the most frequently asked questions about Hubble
+            </p>
+          </div>
+
+          <div class="button-card">
+            <div class="button-r">
+              <button class="button-r-real">Get the facts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-mission">
+          <div class="content">
+            <h2>Hubble Mission</h2>
+
+            <p>Learn about the mission of the Hubble Space Telescope</p>
+          </div>
+
+          <div class="button-card">
+            <div class="button-r">
+              <button class="button-r-real">Learn about the mission</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-collab">
+          <div class="content">
+            <h2>Collaborating Missions</h2>
+            <p>Discover how Hubble partners with the astronomy community</p>
+          </div>
+          <div class="button-card">
+            <div class="button-r">
+              <button class="button-r-real">Discover the Partners</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-recursos">
+          <div class="content">
+            <h2>Recursos en Español</h2>
+            <p>
+              Explore las traducciones al español de los recursos sobre el
+              Hubble más populares
+            </p>
+          </div>
+          <div class="button-card">
+            <div class="button-r">
+              <button class="button-r-real">
+                Acceda a nuestros recursos traducidos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-learning">
+          <div class="content">
+            <h2>Learning Resources</h2>
+            <p>
+              Find resources for learning and teaching other about Hubble
+              science
+            </p>
+          </div>
+
+          <div class="button-card">
+            <div class="button-r">
+              <button class="button-r-real">Stem resources</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- What is hubble looking at now? section -->
+    <div class="hubble-looking-title">
+      <h2 class="looking-news-h2">What is Hubble looking at now?</h2>
+      <div class="gold-line"></div>
+      <h3 class="hubble-favorites-h3">
+        VISIT SPACE TELESCOPE LIVE
+        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+      </h3>
+    </div>
+    <!-- twitter feed -->
+    <div class="container">
+      <div class="slide-container active">
+        <div class="slide-twitter">
+          <div class="user">
+            <div class="user-info">
+              <div class="h3-tweet">
+                <h3>
+                  Hubble is looking at the Stellar Cluster CL-TERZAN-7 with Wide
+                  Field Camera 3 (WFC3/UVI) for Dr. Edoardo Lagioia.
+                  <a href="https://t.co/mstQYbBMYo"
+                    >spacetelescopelive.org/2023-03-15T01:..<i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                    ></i
+                  ></a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <p class="text-twitter">
+            March 14 <i class="fa-brands fa-twitter"></i>
+          </p>
+        </div>
+      </div>
+      <div class="slide-container">
+        <div class="slide-twitter">
+          <div class="user">
+            <div class="user-info">
+              <div class="h3-tweet">
+                <h3>
+                  Hubble is looking at the Galaxy 747548 with Advanced Camera
+                  for Surveys (ACS/WFC) for Dr. Andreas Faisst.
+                  <a href="https://spacetelescopelive.org/2023-03-19T12:31:24Z"
+                    >hspacetelescopelive.org/2023-03-19T12<i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                    ></i
+                  ></a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <p class="text-twitter">
+            March 14 <i class="fa-brands fa-twitter"></i>
+          </p>
+        </div>
+      </div>
+      <div class="slide-container">
+        <div class="slide-twitter">
+          <div class="user">
+            <div class="user-info">
+              <div class="h3-tweet">
+                <h3>
+                  Hubble is looking at the Star HD92406 with Space Telescope
+                  Imaging Spectrograph (STIS/CCD) for Dr. Jonathan
+                  Labadie-Bartz.
+                  <a href="https://spacetelescopelive.org/2023-03-19T10:46:09Z"
+                    >spacetelescopelive.org/2023-03-19T10<i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                    ></i
+                  ></a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <p class="text-twitter">
+            March 14 <i class="fa-brands fa-twitter"></i>
+          </p>
+        </div>
+      </div>
+      <div class="slide-container">
+        <div class="slide-twitter">
+          <div class="user">
+            <div class="user-info">
+              <div class="h3-tweet">
+                <h3>
+                  Hubble is looking at the Galaxy SWIFTJ1351.5-1814 with
+                  Advanced Camera for Surveys (ACS/WFC) for Dr. Aaron Barth.
+                  <a href="https://spacetelescopelive.org/2023-03-19T09:32:24Z"
+                    >spacetelescopelive.org/2023-03-19T09...<i
+                      class="fa-solid fa-arrow-up-right-from-square"
+                    ></i
+                  ></a>
+                </h3>
+              </div>
+            </div>
+          </div>
+          <p class="text-twitter">
+            March 14 <i class="fa-brands fa-twitter"></i>
+          </p>
+        </div>
+      </div>
+
+      <button class="slider-button slider-button-prev" onclick="next()">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="slider-button slider-button-next" onclick="prev()">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+    <!-- Footer  -->
+    <footer>
+      <div class="footer-container">
+        <p>
+          The NASA Hubble Space Telescope is a project of international
+          cooperation between NASA and ESA. AURA’s Space Telescope Science
+          Institute in Baltimore, Maryland, conducts Hubble science operations.
+        </p>
+        <img
+          class="footer-logo-img"
+          src="stsci-logo.svg"
+          alt="footer logo space telescope science Institute"
+        />
+        <div class="second-nav">
+          <div class="col-left">
+            <a href="https://hubblesite.org/about"><h3>About Us</h3></a>
+            <a href="https://hubblesite.org/glossary"><h3>Glossary</h3></a>
+            <a href="https://hubblesite.org/copyright"><h3>Copyright</h3></a>
+          </div>
+          <div class="col-right">
+            <a href="https://hubblesite.org/contact"><h3>Contact Us</h3></a>
+            <a href="https://hubblesite.org/privacy"><h3>Privacy Policy</h3></a>
+            <a href="https://hubblesite.org/sitemap"><h3>Sitemap</h3></a>
+          </div>
+        </div>
+        <div class="social-media">
+          <i class="fa-brands fa-facebook-f"></i>
+
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="white-line-decoration"></div>
+      </div>
+    </footer>
+  </body>
+</html>
